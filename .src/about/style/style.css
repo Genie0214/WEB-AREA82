@@ -1,0 +1,57 @@
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+.fixed {
+  padding: 10px;
+}
+.fixed a {
+  color: #000;
+  text-decoration: none;
+}
+.fixed--pos-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.fixed--role-title {
+  width: 100px;
+}
+.fixed--role-btn {
+  display: flex;
+  gap: 30px;
+  align-items: center;
+}
+
+.hero {
+  padding-block: 70px 200px;
+  padding-inline: 100px;
+  margin: 0;
+}
+.hero--role-desc {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5;
+}
+.hero--role-character {
+  max-width: 300px;
+}
+
+.bottom {
+  display: flex;
+  justify-content: space-between;
+  color: #fff;
+  background-color: #000;
+}
+.bottom--role-logo {
+  max-width: 700px;
+  padding-top: 130px;
+}
+.bottom--role-info {
+  padding: 20px;
+}
