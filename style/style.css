@@ -1,3 +1,4 @@
+@charset "UTF-8";
 *::before,
 *::after {
   box-sizing: border-box;
@@ -7,9 +8,6 @@ body {
   margin: 0;
 }
 
-.fixed {
-  padding: 10px;
-}
 .fixed a {
   color: #000;
   text-decoration: none;
@@ -21,10 +19,14 @@ body {
 }
 .fixed--role-title {
   width: 100px;
+  padding: 24px;
+}
+.fixed--role-top {
+  padding-right: 24px;
 }
 .fixed--role-btn {
   display: flex;
-  gap: 30px;
+  gap: 24px;
   align-items: center;
 }
 
@@ -32,15 +34,28 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding-block: 120px 200px;
   padding-inline: 10px;
   margin: 0;
 }
 .hero--role-desc {
-  font-size: 50px;
-  font-weight: 300;
+  padding-block: 230px 400px;
+  font-size: 48px;
+  font-weight: 400;
+}
+.hero--role-desc2 {
+  width: 100%;
+  max-width: 800px;
+  padding-block: 70px 200px;
+  margin: 0;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 1.5;
+  word-wrap: break-word;
 }
 .hero--role-character {
+  position: fixed;
+  top: 200px; /* 화면 상단에서 20px 아래에 위치하도록 설정 */
+  right: 5px; /* 화면 오른쪽에서 10px 떨어진 곳에 위치하도록 설정 */
   max-width: 300px;
 }
 

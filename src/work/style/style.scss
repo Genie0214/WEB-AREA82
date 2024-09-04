@@ -1,0 +1,38 @@
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+.fixed {
+  a {
+    color: #000;
+    text-decoration: none;
+  }
+
+  &--pos-top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &--role {
+    &-title {
+      width: 100px;
+      padding: 24px;
+    }
+
+    &-top {
+      padding-right: 24px;
+    }
+
+    &-btn {
+      display: flex;
+      gap: 24px;
+      align-items: center;
+    }
+  }
+}

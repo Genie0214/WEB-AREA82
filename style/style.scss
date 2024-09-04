@@ -8,8 +8,6 @@ body {
 }
 
 .fixed {
-  padding: 10px;
-
   a {
     color: #000;
     text-decoration: none;
@@ -24,11 +22,16 @@ body {
   &--role {
     &-title {
       width: 100px;
+      padding: 24px;
+    }
+
+    &-top {
+      padding-right: 24px;
     }
 
     &-btn {
       display: flex;
-      gap: 30px;
+      gap: 24px;
       align-items: center;
     }
   }
@@ -38,16 +41,30 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding-block: 120px 200px;
   padding-inline: 10px;
   margin: 0;
 
   &--role-desc {
-    font-size: 50px;
-    font-weight: 300;
+    padding-block: 230px 400px;
+    font-size: 48px;
+    font-weight: 400;
+  }
+
+  &--role-desc2 {
+    width: 100%;
+    max-width: 800px; // 가독성을 위해 최대 너비를 설정합니다.
+    padding-block: 70px 200px;
+    margin: 0;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 1.5;
+    word-wrap: break-word; // 텍스트가 길어지면 자동으로 줄 바꿈이 되도록 설정합니다.
   }
 
   &--role-character {
+    position: fixed;
+    top: 200px; /* 화면 상단에서 20px 아래에 위치하도록 설정 */
+    right: 5px; /* 화면 오른쪽에서 10px 떨어진 곳에 위치하도록 설정 */
     max-width: 300px;
   }
 }
