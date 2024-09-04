@@ -28,3 +28,17 @@ body {
   gap: 24px;
   align-items: center;
 }
+
+.bottom {
+  display: flex;
+  justify-content: space-between;
+  color: #fff;
+  background-color: #000;
+}
+.bottom--role-logo {
+  max-width: 700px;
+  padding-top: 130px;
+}
+.bottom--role-info {
+  padding: 20px;
+}
